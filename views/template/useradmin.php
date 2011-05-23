@@ -11,22 +11,19 @@
    <div id="page">
       <div id="header"><h1>SiteNetOS</h1></div>
       <div id="navigation">
-         <ul class="menu">
              <?php
              $session = Session::instance();
 
              if (Auth::instance()->logged_in()){
+		echo '<ul class="menu">';
 		echo '<li>'.Html::anchor('appmanager', 'Apps').'</li>';
 		echo '<li>'.Html::anchor('appstore', 'Store').'</li>';
                 echo '<li>'.Html::anchor('appstore/register', 'Register Application').'</li>';
                 echo '<li>'.Html::anchor('user/profile', 'My profile').'</li>';
                 echo '<li>'.Html::anchor('user/logout', 'Log out').'</li>';
-             } else {
-                echo '<li>'.Html::anchor('user/register', 'Register').'</li>';
-                echo '<li>'.Html::anchor('user/login', 'Log in').'</li>';
+		echo '</ul>';
              }
            ?>
-         </ul>
       </div>
    <div id="content">
     <?php
