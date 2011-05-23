@@ -5,11 +5,11 @@
    <meta charset="utf-8"/>
    <?php foreach ($styles as $file => $type) echo HTML::style($file, array('media' => $type)), "\n" ?>
    <?php foreach ($scripts as $file) echo HTML::script($file), "\n" ?>
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
    <div id="page">
-      <div id="header"></div>
+      <div id="header"><h1>SiteNetOS</h1></div>
       <div id="navigation">
          <ul class="menu">
              <?php
@@ -35,7 +35,7 @@
 </div>
    
 <div id="kohana-profiler">
-<?php echo View::factory('profiler/stats');
+<?php //echo View::factory('profiler/stats');
 ?>
 </div>
 </body>
