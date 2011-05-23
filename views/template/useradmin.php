@@ -35,12 +35,12 @@
        echo '</div></div>';
      }
      echo $content ?>
-   </div>
 <footer class="block">
 	<div class="content">
 		All right reserved &copy; SiteNetOS.
 	</div>
 </footer>
+</div>
 </div> 
 <?php 
 // echo '<div id="kohana-profiler">'.View::factory('profiler/stats').'</div>';
