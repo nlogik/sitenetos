@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" dir="ltr" lang="en-US">
 <head>
    <title><?php echo $title ?></title>
-   <meta charset="utf-8" />
+   <meta charset="utf-8"/>
    <?php foreach ($styles as $file => $type) echo HTML::style($file, array('media' => $type)), "\n" ?>
    <?php foreach ($scripts as $file) echo HTML::script($file), "\n" ?>
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
    <div id="page">
@@ -36,8 +36,10 @@
      }
      echo $content ?>
    </div>
-</div>
-   
+<footer>
+	All right reserved &copy; SiteNetOS.
+</footer>
+</div> 
 <?php 
 // echo '<div id="kohana-profiler">'.View::factory('profiler/stats').'</div>';
 ?>
