@@ -36,8 +36,10 @@
      }
      echo $content ?>
    </div>
-<footer>
-	All right reserved &copy; SiteNetOS.
+<footer class="block">
+	<div class="content">
+		All right reserved &copy; SiteNetOS.
+	</div>
 </footer>
 </div> 
 <?php 
