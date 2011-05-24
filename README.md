@@ -7,3 +7,5 @@ How to use
 ----------
 
 Simple, just added to your modules folder.
+
+For config...
